@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/nes.css/css/nes.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <title>Nintendo Retro</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navigation-bar">
+      <img class="logo" src="images/Nintendo logo.png" alt="logo">
+      <ul>
+        <li><a class="nav-link">Games</a></li>
+        <li><a class="nav-link">Systems</a></li>
+        <li><a class="nav-link" onclick="loadHtml()">About us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="information">
+
+      <br>
+      <section class="nes-container with-title is-centered carousel">
+
+        <h3 class="title">Info</h3>
+        <div class="videogames">
+
+          <div>
+            <p>Nintendo Co., Ltd., headquartered in Kyoto, Japan, has created franchises that have become household
+              names worldwide, including Mario™, Donkey Kong™, The Legend of Zelda™, Metroid™, Pokémon™, Animal
+              Crossing™, Pikmin™ and Splatoon™, through its integrated hardware and software products.
+            </p>
+            <i class="nes-pokeball"></i>
+            <p>Nintendo aims to deliver unique, intuitive entertainment experiences for everyone, manufacturing and
+              marketing video game devices such as the Nintendo Switch™ family of systems, developing and operating
+              applications for smart devices, and collaborating with partners on a range of other entertainment
+              initiatives like visual content and theme parks.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <br>
+      <section class="nes-container with-title is-centered history-container">
+        <h3 class="title">History</h3>
+        <div class="history">
+          <div class="icon-mario">
+            <i class="nes-mario"></i>
+          </div>
+          <p>Nintendo's mission is to put smiles on the faces of everyone we touch. We do so by creating new
+            surprises for people across the world to enjoy together. We've forged our own path since 1889,
+            when we began making hanafuda playing cards in Kyoto, Japan. Today, we’re fortunate to be able to
+            share our characters, ideas and worlds through the medium of video games and the entertainment industry.</p>
+        </div>
+      </section>
+
+      <br>
+      <section class="nes-container with-title is-centered icons-container">
+        <h3 class="title">Main Icons</h3>
+        <div class="facts">
+          <div>
+            <i class="nes-mario"></i>
+            <i class="nes-ash"></i>
+            <i class="nes-pokeball"></i>
+            <i class="nes-bulbasaur"></i>
+            <i class="nes-charmander"></i>
+            <i class="nes-squirtle"></i>
+            <i class="nes-kirby"></i>
+          </div>
+          <p></p>
+        </div>
+      </section>
+
+      <br>
+      <section class="nes-container with-title is-centered consoles-container">
+        <h3 class="title">Consoles</h3>
+        <div class="consoles">
+          <section>
+            <button type="button" class="nes-btn is-error" onclick="document.getElementById('dialog-nes').showModal();">
+              NES
+            </button>
+            <dialog class="nes-dialog" id="dialog-nes">
+              <form method="dialog">
+                <p class="title">NES</p>
+                <p>Nintendo Entertainment System: 1st generation</p>
+                <menu class="dialog-menu">
+                  <button class="nes-btn">Cancel</button>
+                  <button class="nes-btn is-primary">Confirm</button>
+                </menu>
+              </form>
+            </dialog>
+          </section>
+
+          <section>
+            <button type="button" class="nes-btn is-error" onclick="document.getElementById('dialog-wii').showModal();">
+              Wii
+            </button>
+            <dialog class="nes-dialog" id="dialog-wii">
+              <form method="dialog">
+                <p class="title">Wii</p>
+                <p>Nintendo Wii: 6th generation</p>
+                <menu class="dialog-menu">
+                  <button class="nes-btn">Cancel</button>
+                  <button class="nes-btn is-primary">Confirm</button>
+                </menu>
+              </form>
+            </dialog>
+          </section>
+
+          <section>
+            <button type="button" class="nes-btn is-error"
+              onclick="document.getElementById('dialog-gameboy').showModal();">
+              Game Boy
+            </button>
+            <dialog class="nes-dialog" id="dialog-gameboy">
+              <form method="dialog">
+                <p class="title">Game Boy</p>
+                <p>Nintendo Game Boy: 6th generation</p>
+                <menu class="dialog-menu">
+                  <button class="nes-btn">Cancel</button>
+                  <button class="nes-btn is-primary">Confirm</button>
+                </menu>
+              </form>
+            </dialog>
+          </section>
+
+          <section>
+            <button type="button" class="nes-btn is-error" onclick="document.getElementById('dialog-ds').showModal();">
+              DS
+            </button>
+            <dialog class="nes-dialog" id="dialog-ds">
+              <form method="dialog">
+                <p class="title">DS</p>
+                <p>Nintendo DS: 7th generation</p>
+                <menu class="dialog-menu">
+                  <button class="nes-btn">Cancel</button>
+                  <button class="nes-btn is-primary">Confirm</button>
+                </menu>
+              </form>
+            </dialog>
+          </section>
+
+        </div>
+      </section>
+
+      <br>
+      <section class="nes-container with-title is-centered ">
+        <h3 class="title">NES</h3>
+        <div class="history">
+          <div class="icon-mario">
+            <i class="nes-kirby"></i>
+          </div>
+          <p>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by
+            Nintendo. It was first released in Japan in 1983 as the Family Computer (FC),[note 1] commonly known as the
+            Famicom.[note 2] The NES, a redesigned version, was released in American test markets on October 18, 1985,
+            before becoming widely available in North America and other countries.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="nes-container child videogames" style="max-width:600px; ">
+
+      <div class="icon-controller">
+        <div class="nes-balloon from-rigth">
+          <p>Click the </p>
+          <p>controller!</p>
+        </div>
+        <i class="nes-ash"></i>
+      </div>
+
+      <div class="carousel__controller">
+        <img id="controller" src="images/NES controller.png" usemap="#image-map">
+        <map name="image-map">
+          <area class="nes-pointer" alt="right" title="right" coords="281,261,363,349" shape="rect">
+          <area class="nes-pointer" alt="left" title="left" coords="93,264,174,349" shape="rect">
+          <area class="nes-pointer carousel-control-prev" id="button-up" alt="up" href="#carouselExample"
+            data-slide="prev" title="up" coords="184,171,271,254" shape="rect">
+          <area class="nes-pointer carousel-control-next" id="button-down" alt="down" href="#carouselExample"
+            data-slide="next" title="down" coords="269,441,184,362" shape="rect">
+          <area class="nes-pointer" id="button-b" alt="button-b" title="button-b" coords="908,397,50" shape="circle">
+          <area class="nes-pointer" id="button-a" alt="button-a" title="button-a" coords="1067,397,51" shape="circle">
+        </map>
+      </div>
+
+
+
+      <div id="carouselExample" class="carousel vert slide">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block mx-auto img-fluid" src="images/Donkey Kong.jpg" alt="Donkey_Kong">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block mx-auto img-fluid" src="images/Kirbys Adventure.jpg" alt="Kirby">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block mx-auto img-fluid" src="images/MegaMan.jpg" alt="Mega_Man">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="additional-info">
+
+    <footer>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="image-map-resp/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function (e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
+</body>
+
+</html>

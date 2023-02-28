@@ -1,0 +1,127 @@
+header {
+    background-color: #7a8aba;
+    display: flex;
+    padding: 15px 20px;
+}
+
+p, .title, a {
+    font-family: 'Press Start 2P';
+}
+
+li:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+li {
+    display: inline-block;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer {
+    background: #e70012;
+    height: 10vh;
+}
+
+.content {
+    display: flex;
+    padding: 50px;
+}
+
+.additional-info {
+    background: #e70012;
+}
+
+.logo{
+    width: 10%; height: auto;
+}
+
+.nes-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#controller {
+    width: 100%; height: 100%;   
+    margin: 10px auto; 
+    overflow: hidden;
+}
+
+.icon-controller {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    align-items: center;
+}
+
+
+.carousel__button {
+    border: 0;
+    cursor: pointer;
+}
+
+.videogames{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.history {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-mario {
+    margin-right: 20px;
+}
+
+.consoles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nes-btn{
+    width: 120px;
+}
+
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
